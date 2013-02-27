@@ -1,6 +1,17 @@
 {
-    "require": {
-       "shuber/curl": "dev-master" 
+    "require-dev": {
+        "phpspec/phpspec2": "*"
     },
-    "autoload": {"psr-0": {"": "src/"}}
+    "config": {
+        "bin-dir": "bin"
+    },
+   "require": {
+       "shuber/curl": "dev-master"
+    },
+    "autoload": {
+      "psr-0": {
+         "SwimDB": "src"
+      }
+    },
+    "minimum-stability": "dev" 
 }

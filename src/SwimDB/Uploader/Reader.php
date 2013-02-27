@@ -54,4 +54,10 @@ class Reader implements \Iterator
       return isset($this->file_content[$this->position]);
    }  
 
+   public function convert_pdf_to_txt($filename)
+   {
+      $file = escapeshellarg($filename);
+      return ("" === exec("pdftotext -layout {$file}"));
+   }
+
 }
